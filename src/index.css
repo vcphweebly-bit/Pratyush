@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #fff9ee;
+  background: #07152e;
+  font-family: "Nunito", system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, rgba(137, 199, 245, 0.15), transparent 34rem),
+    #020916;
+}
+
+#root {
+  width: min(100%, 430px);
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background: #07152e;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.38);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.72;
+}
+
+::selection {
+  background: rgba(137, 199, 245, 0.45);
+}
+
+.star-dot {
+  animation: twinkle 4.8s ease-in-out infinite;
+}
+
+.paper-texture {
+  background-image:
+    radial-gradient(circle at 18% 20%, rgba(16, 42, 86, 0.08), transparent 20%),
+    linear-gradient(110deg, rgba(255, 255, 255, 0.18), transparent 34%),
+    repeating-linear-gradient(0deg, rgba(7, 21, 46, 0.035) 0 1px, transparent 1px 9px);
+}
+
+.perspective-card {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.shooting-star {
+  filter: drop-shadow(0 0 12px rgba(221, 242, 255, 0.9));
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.35);
+  }
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bob {
+  animation: bob 1.8s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 4.5s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
