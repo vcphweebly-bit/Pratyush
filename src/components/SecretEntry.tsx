@@ -26,7 +26,7 @@ export function SecretEntry({ onUnlock, finalOpened }: SecretEntryProps) {
 
     setIsOpening(true);
     try {
-      const audio = new Audio("/audio/unlock.mp3");
+      const audio = new Audio(`${import.meta.env.BASE_URL}audio/unlock.mp3`);
       audio.volume = 0.35;
       void audio.play();
     } catch {

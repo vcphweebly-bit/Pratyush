@@ -25,9 +25,10 @@ export default function App() {
   const [welcomed, setWelcomed] = useLocalStorage("little-universe-welcomed", false);
   const [finalOpened, setFinalOpened] = useLocalStorage("little-universe-final-opened", false);
   const [moonClicks, setMoonClicks] = useState(0);
+  const soundtrack = siteContent.songs[0];
   const music = usePersistentMusic({
-    src: "/audio/dooriyan.mp3",
-    startAtSeconds: 31,
+    src: soundtrack?.file ?? `${import.meta.env.BASE_URL}audio/dooriyan.mp3`,
+    startAtSeconds: soundtrack?.startAtSeconds ?? 31,
     volume: 0.42
   });
 

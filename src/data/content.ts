@@ -52,6 +52,8 @@ export type QuizQuestion = {
   response: string;
 };
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 export const siteContent = {
   recipient: {
     name: "Kausiki",
@@ -72,7 +74,7 @@ export const siteContent = {
   hero: {
     title: "For Kausiki",
     subtitle: "Some people enter our lives quietly,\nthen somehow become an entire universe.\nThis one is for you, Ziddi.",
-    image: "/images/photo-01.png"
+    image: asset("images/photo-01.png")
   },
 
   memories: [
@@ -80,7 +82,7 @@ export const siteContent = {
       date: "",
       title: "The Beginning",
       description: "The day an ordinary conversation became something I would remember, Ziddi.",
-      image: "/images/photo-02.jpeg",
+      image: asset("images/photo-02.jpeg"),
       x: 18,
       y: 34
     },
@@ -88,7 +90,7 @@ export const siteContent = {
       date: "",
       title: "The Laugh I Kept",
       description: "You laughed at something tiny, and the whole day changed shape.",
-      image: "/images/photo-03.jpeg",
+      image: asset("images/photo-03.jpeg"),
       x: 37,
       y: 18
     },
@@ -96,7 +98,7 @@ export const siteContent = {
       date: "",
       title: "A Quiet Almost",
       description: "One of those moments that was small to the world and huge to me.",
-      image: "/images/photo-04.jpeg",
+      image: asset("images/photo-04.jpeg"),
       x: 62,
       y: 31
     },
@@ -104,7 +106,7 @@ export const siteContent = {
       date: "",
       title: "The Song Loop",
       description: "A melody started carrying Kausiki's name around in my head.",
-      image: "/images/photo-05.jpeg",
+      image: asset("images/photo-05.jpeg"),
       x: 76,
       y: 57
     },
@@ -112,7 +114,7 @@ export const siteContent = {
       date: "",
       title: "Warm Light",
       description: "A normal evening, except I wanted to keep it forever.",
-      image: "/images/photo-06.jpg",
+      image: asset("images/photo-06.jpg"),
       x: 46,
       y: 67
     },
@@ -120,7 +122,7 @@ export const siteContent = {
       date: "",
       title: "Still Growing",
       description: "This story is still making room for new stars, especially the stubborn Ziddi ones.",
-      image: "/images/photo-07.jpeg",
+      image: asset("images/photo-07.jpeg"),
       x: 27,
       y: 76
     },
@@ -128,7 +130,7 @@ export const siteContent = {
       date: "",
       title: "The Quiet Memory",
       description: "You found the quiet memory-the one I never say out loud.",
-      image: "/images/photo-08.jpeg",
+      image: asset("images/photo-08.jpeg"),
       x: 94,
       y: 14,
       hidden: true
@@ -141,7 +143,7 @@ export const siteContent = {
       title: "The Beginning",
       description: "The first page of this tiny archive for Kausiki.",
       label: "The beginning",
-      image: "/images/photo-02.jpeg",
+      image: asset("images/photo-02.jpeg"),
       icon: "sparkles"
     },
     {
@@ -149,7 +151,7 @@ export const siteContent = {
       title: "The First Proper Conversation",
       description: "The moment the conversation stopped being ordinary.",
       label: "The first proper conversation",
-      image: "/images/photo-03.jpeg",
+      image: asset("images/photo-03.jpeg"),
       icon: "message"
     },
     {
@@ -157,7 +159,7 @@ export const siteContent = {
       title: "The Day I Laughed Too Much",
       description: "I still remember the exact kind of ridiculous it was.",
       label: "The day I laughed too much",
-      image: "/images/photo-04.jpeg",
+      image: asset("images/photo-04.jpeg"),
       icon: "heart"
     },
     {
@@ -165,7 +167,7 @@ export const siteContent = {
       title: "A Moment I Would Replay",
       description: "If time had a replay button, this would be on the list.",
       label: "A moment I wish I could replay",
-      image: "/images/photo-05.jpeg",
+      image: asset("images/photo-05.jpeg"),
       icon: "moon"
     },
     {
@@ -173,7 +175,7 @@ export const siteContent = {
       title: "This Little Universe",
       description: "A handmade place for everything that keeps becoming us.",
       label: "The little universe",
-      image: "/images/photo-01.png",
+      image: asset("images/photo-01.png"),
       icon: "sparkles"
     }
   ] satisfies TimelineItem[],
@@ -207,29 +209,29 @@ export const siteContent = {
 
   gallery: [
     {
-      src: "/images/photo-02.jpeg",
+      src: asset("images/photo-02.jpeg"),
       alt: "Kausiki memory photo",
       caption: "the tiny beginning",
       hasSecretArrow: true,
-      secretSrc: "/images/photo-08.jpeg"
+      secretSrc: asset("images/photo-08.jpeg")
     },
     {
-      src: "/images/photo-03.jpeg",
+      src: asset("images/photo-03.jpeg"),
       alt: "Kausiki memory photo",
       caption: "a soft blue evening"
     },
     {
-      src: "/images/photo-04.jpeg",
+      src: asset("images/photo-04.jpeg"),
       alt: "Kausiki memory photo",
       caption: "kept for later"
     },
     {
-      src: "/images/photo-05.jpeg",
+      src: asset("images/photo-05.jpeg"),
       alt: "Kausiki memory photo",
       caption: "this one feels warm"
     },
     {
-      src: "/images/photo-06.jpg",
+      src: asset("images/photo-06.jpg"),
       alt: "Kausiki memory photo",
       caption: "proof of a good day"
     }
@@ -239,8 +241,8 @@ export const siteContent = {
     {
       title: "Dooriyan",
       artist: "For Ziddi",
-      file: "/audio/dooriyan.mp3",
-      cover: "/images/photo-09.jpeg",
+      file: asset("audio/dooriyan.mp3"),
+      cover: asset("images/photo-09.jpeg"),
       note: "This one starts from the part that feels like it was waiting for her.",
       startAtSeconds: 31
     }
@@ -275,7 +277,7 @@ export const siteContent = {
 
   gift: {
     type: "promise",
-    image: "/images/wish-kausiki.png",
+    image: asset("images/wish-kausiki.png"),
     revealText:
       "One free wish for Ziddi:\nredeemable whenever you want a tiny adventure, a saved seat, a badly hidden smile, or someone quietly choosing your side.",
     couponTitle: "One free wish",
