@@ -81,7 +81,7 @@ export const siteContent = {
     {
       date: "",
       title: "The Beginning",
-      description: "The day an ordinary conversation became something I would remember, Ziddi.",
+      description: "The day an ordinary conversation became something I would remember, Ziddi. Tiny rule from the archive: do not reply just 'hmm' to Pratyush, it makes him worry about you.",
       image: asset("images/photo-02.jpeg"),
       x: 18,
       y: 34
@@ -129,7 +129,7 @@ export const siteContent = {
     {
       date: "",
       title: "The Quiet Memory",
-      description: "You found the quiet memory-the one I never say out loud.",
+      description: "You found the quiet memory-the one I never say out loud. Also, please do not send Pratyush a lonely 'hmm'; his brain immediately starts writing worried poetry about Ziddi.",
       image: asset("images/photo-08.jpeg"),
       x: 94,
       y: 14,
@@ -191,7 +191,7 @@ export const siteContent = {
     },
     {
       title: "Your impossible timing",
-      text: "You can reply after an entire geological era and still make me smile."
+      text: "You can reply after an entire geological era and still make me smile. Just maybe not with only 'hmm', because Pratyush will start worrying about Ziddi in 4K."
     },
     {
       title: "The care in small things",
@@ -199,7 +199,7 @@ export const siteContent = {
     },
     {
       title: "Your stubborn hope",
-      text: "It keeps finding a window, even on difficult days."
+      text: "It keeps finding a window, even on difficult days. And if the day is heavy, say a little more than 'hmm' so Pratyush knows Ziddi is okay."
     },
     {
       title: "How you become a place",
@@ -251,15 +251,15 @@ export const siteContent = {
   openWhenMessages: [
     {
       title: "Open when you feel low",
-      message: "Ziddi, I hope this reminds you that one hard hour is not the whole sky."
+      message: "Ziddi, I hope this reminds you that one hard hour is not the whole sky. And if Pratyush asks if you are okay, please do not reply only 'hmm'; that tiny word makes him worry about you."
     },
     {
       title: "Open when you miss me",
-      message: "Imagine me saving you a seat in every ordinary moment, Kausiki."
+      message: "Imagine me saving you a seat in every ordinary moment, Kausiki. Also imagine Pratyush dramatically overthinking one 'hmm', because apparently that is his cardio."
     },
     {
       title: "Open when you cannot sleep",
-      message: "Let the world be quiet. You do not have to solve everything tonight."
+      message: "Let the world be quiet. You do not have to solve everything tonight. Just send Pratyush a full tiny sentence instead of 'hmm' so he can sleep too."
     },
     {
       title: "Open when you need motivation",
@@ -267,11 +267,11 @@ export const siteContent = {
     },
     {
       title: "Open when you are overthinking",
-      message: "The gentlest answer is allowed to be true too."
+      message: "The gentlest answer is allowed to be true too. If you are quiet, Pratyush will understand; if you write only 'hmm', he will worry about Ziddi instantly."
     },
     {
       title: "Open when today feels special",
-      message: "Keep a little piece of this day. It belongs to you, Kausiki."
+      message: "Keep a little piece of this day. It belongs to you, Kausiki. Bonus instruction: no mysterious 'hmm' replies to Pratyush on special days."
     }
   ] satisfies OpenWhenMessage[],
 
@@ -298,10 +298,10 @@ export const siteContent = {
       response: "A suspiciously accurate answer."
     },
     {
-      question: "What phrase do I say too often?",
-      options: ["Wait, listen", "This is important", "Ziddi"],
-      answerIndex: 2,
-      response: "Correct in spirit, which is the only court that matters here."
+      question: "Which reply makes Pratyush worry about Ziddi way too fast?",
+      options: ["A proper sentence", "hmm", "A voice note longer than expected"],
+      answerIndex: 1,
+      response: "The official universe answer is 'hmm'. Even if you picked something else, the warning still stands."
     },
     {
       question: "Which memory would I replay?",
@@ -312,13 +312,13 @@ export const siteContent = {
   ] satisfies QuizQuestion[],
 
   finalLetter:
-    "Dear Kausiki,\n\nZiddi, I wanted this to feel less like a page and more like opening a drawer full of little proof: that you are noticed, remembered, chosen, and celebrated in ways ordinary words keep failing to hold.\n\nSomewhere between the tiny conversations, the songs, the almosts, and the moments I keep replaying, you became a whole constellation in my life.\n\nSo this is a small universe made for you. It can grow whenever we do.\n\nWith all my unreasonable stars,\nPratyush",
+    "Dear Kausiki,\n\nZiddi, I wanted this to feel less like a page and more like opening a drawer full of little proof: that you are noticed, remembered, chosen, and celebrated in ways ordinary words keep failing to hold.\n\nSomewhere between the tiny conversations, the songs, the almosts, and the moments I keep replaying, you became a whole constellation in my life.\n\nOne very small request from Pratyush: please do not reply only 'hmm' when something is wrong. He pretends to be normal, but that one tiny reply makes him worry about Ziddi more than he knows how to say.\n\nSo this is a small universe made for you. It can grow whenever we do.\n\nWith all my unreasonable stars,\nPratyush",
 
   finalMessage: "Out of every possible timeline,\nI am grateful this one contained you.",
 
   easterEggs: {
     moon: "Okay, detective. You found the moon's secret.",
-    nickname: "You typed the secret name. Of course Ziddi gets a secret note: this whole universe was looking for you.",
+    nickname: "You typed the secret name. Of course Ziddi gets a secret note: this whole universe was looking for you. Also, Pratyush has officially requested fewer 'hmm' replies because they make him quietly worry about you.",
     alreadySeen: "You have already seen the universe.\nNow you know why it was made."
   }
 };
